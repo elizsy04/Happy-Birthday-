@@ -2,6 +2,9 @@ function openSurprise() {
 
     const letter = document.getElementById("letter");
 
+    const music = document.getElementById("birthdayMusic"); 
+    music.play();
+
     letter.classList.remove("hidden");
 
     window.scrollTo({
