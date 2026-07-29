@@ -13,6 +13,7 @@ function openSurprise() {
     });
 
     createHearts();
+    createConfetti();
 
 }
 
@@ -37,6 +38,33 @@ function createHearts(){
         setTimeout(()=>{
             heart.remove();
         },4000);
+
+    }
+
+}
+
+function createConfetti(){
+
+    for(let i = 0; i < 50; i++){
+
+        let confetti = document.createElement("div");
+
+        confetti.innerHTML = "🎊";
+
+        confetti.style.position = "fixed";
+        confetti.style.left = Math.random()*100 + "vw";
+        confetti.style.top = "-20px";
+        confetti.style.fontSize = "25px";
+
+        confetti.style.animation =
+        "heartFall 3s linear";
+
+        document.body.appendChild(confetti);
+
+
+        setTimeout(()=>{
+            confetti.remove();
+        },3000);
 
     }
 
