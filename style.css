@@ -126,3 +126,23 @@ h3 {
     }
 
 }
+
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+
+.gallery img {
+
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
